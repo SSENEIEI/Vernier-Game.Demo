@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .vernier-simulator {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    left: -350px;
+  }
+  
+  .vernier-main-scale {
+    position: absolute;
+    top: -100px;
+    left: -0px;
+    width: 1450px;
+  }
+  
+  .vernier-vernier-scale {
+    position: absolute;
+    top: -100px;
+    left: -0.5px;
+    height: 669px;
+  }
+  #startStopButton{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #4caf50;
+    left: 500px;
+    color: #fff;
+    border: solid;
+    font-size: 25px;
+    border-radius: 20px;
+  }
+  #vernierPosition {
+    position: absolute;
+    bottom: -10px;
+    left: 400px;
+    transform: translate(-50%, 0);
+    font-size: 25px;
+  }
+  .vernier-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Adjust width and height as needed */
+    height: 100%;
+    z-index: -1;  }
+  
+  @media (max-width: 480px) {
+  
+    .vernier-simulator {
+      position: absolute;
+      width: 600px;
+      height: 400px;
+      left: -350px;
+    }
+    
+    .vernier-main-scale {
+      position: absolute;
+      top: -100px;
+      left: 350px;
+      width: 450px;
+    }
+    
+    .vernier-vernier-scale {
+      position:absolute;
+      top: -95.5px;
+      left: 352px;
+      height: 200px;
+    } 
+      #startStopButton{
+      position: inherit;
+      /* transform: translate(-50%, 0); */
+      background-color: #4caf50;
+      left: 570px;
+      width:150px;
+      height: 50px;
+      color: #fff;
+      border: solid;
+      font-size: 15px;
+      border-radius: 5px;
+      bottom: -100px;
+  }  
+  #vernierPosition {
+    position: absolute;
+    bottom: 100px;
+    left: 570px;
+    transform: translate(-50%, 0);
+    font-size: 25px;
+    border: 2px solid #000;  /* Add a border */
+    padding: 25px 30px;  /* Add some padding */
+    border-radius: 5px;  /* Add rounded corners */
+  }
+  
+  #game2Button {
+    position: absolute;
+    bottom: -35px;
+    right: -50px;
+    transform: translate(-50%, 0);
+    background-color:#FAEE91;
+    color: #fff;
+    border: solid;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+  
+}

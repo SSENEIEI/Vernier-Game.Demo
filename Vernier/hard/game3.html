@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vernier Simulator2</title>
+  <link rel="stylesheet" href="hard.css">
+</head>
+<body>
+  <div class="vernier-simulator">
+    <img class="vernier-main-scale" src="pictures/vernier1hd.PNG" alt="แถบวัดหลัก">
+    <img id="vernier-image" class="vernier-vernier-scale" src="pictures/vernier2hd.PNG" alt="แถบวัด Vernier">
+    <button id="startStopButton">เริ่ม/หยุด</button>
+    <h3 hidden id="vernierPosition"></h3>
+  </div>
+    <!-- <button id="game2Button" onclick="nextImage()" >Next</button> -->
+  <!-- <div id="imageContainer">
+    <img class="Image" id="displayedImage" src="" alt="Random Image ">
+  </div> -->
+  <div class="imageContainer"> 
+    <img class="Image" id="displayedImage" src="pictures/lime.png" alt="Random Image ">
+  </div>
+  <div class="questionanswers">
+    <p id="question">ค่าที่ถูกต้องคือ?</p>
+    <div id="answers">
+        <button class="answer" onclick="checkAnswer(this)">86.79</button>
+        <button class="answer" onclick="checkAnswer(this)">59.10</button>
+        <button class="answer" onclick="checkAnswer(this)">95.85</button>
+        <button class="answer" onclick="checkAnswer(this)">75.50</button>
+    </div>
+    <p id="feedback"></p>
+  </div>
+  <script src="hard.js"></script>
+</body>
+</html>
